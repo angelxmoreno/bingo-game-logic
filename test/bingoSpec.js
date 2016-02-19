@@ -18,7 +18,7 @@ describe('The Bingo', function () {
         });
 
         it('should default to 2 player objects', function () {
-            expect(bingo.players.length).to.be.equal.to(2);
+            expect(bingo.players).to.have.length(2);
         });
         
         it('should have an array of player objects', function () {
@@ -29,7 +29,7 @@ describe('The Bingo', function () {
         
     });
 
-    describe('initializing', function () {
+    describe('when initializing', function () {
         before(function () {
             game_config = [
                 {
@@ -50,7 +50,7 @@ describe('The Bingo', function () {
         });
 
         it('should have the same number of players passed', function () {
-            expect(bingo.players.length).to.be.equal.to(game_config.length);
+            expect(bingo.players).to.have.length(game_config.length);
         }); 
     });
 });

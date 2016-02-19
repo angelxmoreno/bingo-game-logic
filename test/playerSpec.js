@@ -8,7 +8,7 @@ var player;
 var players;
 var player_config;
 
-describe('Player', function () {
+describe('The Player', function () {
     describe('constructor', function () {
         before(function () {
             player = new Player();
@@ -19,7 +19,7 @@ describe('Player', function () {
         });
 
         it('should default to 1 card object', function () {
-            expect(player.cards.length).to.be.equal.to(1);
+            expect(player.cards).to.have.length(1);
         });
 
         it('should have an array of card objects', function () {
@@ -30,7 +30,7 @@ describe('Player', function () {
 
     });
 
-    describe('initializing', function () {
+    describe('when initializing', function () {
         before(function () {
             player_config = [
                 {
@@ -54,7 +54,7 @@ describe('Player', function () {
 
         it('should have the same number of cards passed', function () {
             player_config.forEach(function (config, index) {
-                expect(player.cards.length).to.be.equal.to(config.cards);
+                expect(player.cards).to.have.length(config.cards);
             });
         });
     });
