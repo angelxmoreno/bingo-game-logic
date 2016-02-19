@@ -1,4 +1,3 @@
-/* global require */
+/* global require, module */
 
-var Bingo = require('./lib/bingo');
-var bingoGame = new Bingo();
+module.exports = require('./lib/bingo');
