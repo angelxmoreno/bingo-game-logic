@@ -1,0 +1,25 @@
+{
+    "name": "bingo-game-logic",
+    "version": "0.0.1",
+    "description": "A Bingo Game brain",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/angelxmoreno/bingo-game-logic.git"
+    },
+    "keywords": [
+        "Bingo",
+        "Game"
+    ],
+    "author": "Angel S. Moreno <angelxmoreno@gmail.com> (https://angelxmoreno.github.io/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/angelxmoreno/bingo-game-logic/issues"
+    },
+    "homepage": "https://github.com/angelxmoreno/bingo-game-logic#readme",
+    "devDependencies": {
+    }
+}
