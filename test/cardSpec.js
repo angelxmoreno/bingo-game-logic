@@ -63,6 +63,26 @@ describe('The Card', function () {
                 }).to.throw(shared.errors.number_out_of_range);
             }
         });
+
+        it('should reset the state of all card slots', function () {
+            //activate all numbers
+            card.getNumbers().forEach(function (number) {
+                card.activateNumber(number);
+            });
+
+            //assert that every number is active
+            card.getCardSlots().forEach(function (cardSlot) {
+                expect(cardSlot.getState()).to.be.true;
+            });
+
+            //reset the state of the card
+            card.reset();
+
+            //assert that every number is inactivate
+            card.getCardSlots().forEach(function (cardSlot) {
+                expect(cardSlot.getState()).to.be.false;
+            });
+        });
     });
 
     describe('Winning', function () {
