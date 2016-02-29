@@ -91,10 +91,10 @@ describe('The Card', function () {
                 //reset the card
                 card = new Card();
                 var numbers = card.getNumbers();
-                pattern.forEach(function(target_index){
+                pattern.forEach(function (target_index) {
                     //activate spesific slots
                     expect(card.didWin()).to.be.false;
-                    card.activateNumber(numbers[target_index]); 
+                    card.activateNumber(numbers[target_index]);
                 });
                 expect(card.didWin()).to.be.true;
             });

@@ -88,31 +88,31 @@ describe('The Column', function () {
             var numbers = [];
             columns.forEach(function (column) {
                 var column_numbers = [];
-                column.getNumbers().forEach(function(number){
+                column.getNumbers().forEach(function (number) {
                     expect(column.getType()).to.be.equal(shared.number2type(number));
                     column_numbers.push(number);
                 });
-                if(column.getType() === 'N'){
+                if (column.getType() === 'N') {
                     expect(column_numbers).to.have.length(4);
                 } else {
                     expect(column_numbers).to.have.length(5);
                 }
             });
         });
-        
+
         it('should return true when activating an existing number', function () {
             expect(columns).to.have.length(5);
             columns.forEach(function (column) {
-                column.getNumbers().forEach(function(number){
+                column.getNumbers().forEach(function (number) {
                     expect(column.activateNumber(number)).to.be.true;
                 });
             });
         });
-        
+
         it('should return false when activating a non-existing number', function () {
             expect(columns).to.have.length(5);
             columns.forEach(function (column) {
-                [0,-1,100,200].forEach(function(bad_number){
+                [0, -1, 100, 200].forEach(function (bad_number) {
                     expect(column.activateNumber(bad_number)).to.be.false;
                 });
             });

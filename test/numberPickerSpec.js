@@ -71,11 +71,8 @@ describe('The Number Picker', function () {
                     expect(after)
                     .to.have.length(i)
                     .and.include(picked);
-
                 }
-                expect(numberPicker).to.be.an.instanceof(NumberPicker);
             });
-
         });
     });
 });
