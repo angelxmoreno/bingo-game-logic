@@ -1,10 +1,11 @@
 /* global require */
 
-var shared = require('../lib/shared');
 var expect = require('chai').expect;
-var Bingo = require('../index');
-var Player = require('../lib/player');
-var NumberPicker = require('../lib/number_picker');
+var BingoGame = require('../index')();
+var shared = BingoGame.Shared;
+var Bingo = BingoGame.Bingo;
+var Player = BingoGame.Player;
+
 var bingo;
 var config = [
     {

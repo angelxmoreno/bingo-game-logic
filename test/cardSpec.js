@@ -1,9 +1,10 @@
 /* global require */
 
-var shared = require('../lib/shared');
 var expect = require('chai').expect;
-var Card = require('../lib/card');
-var CardColumn = require('../lib/card_column');
+var BingoGame = require('../index')();
+var shared = BingoGame.Shared;
+var Card = BingoGame.Card;
+var CardColumn = BingoGame.CardColumn;
 
 var card;
 

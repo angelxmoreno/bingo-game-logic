@@ -1,8 +1,9 @@
 /* global require */
 
 var expect = require('chai').expect;
-var shared = require('../lib/shared');
-var CardSlot = require('../lib/card_slot');
+var BingoGame = require('../index')();
+var shared = BingoGame.Shared;
+var CardSlot = BingoGame.CardSlot;
 var cardSlot;
 var numIterations = 1000;
 describe('The Card Slot', function () {

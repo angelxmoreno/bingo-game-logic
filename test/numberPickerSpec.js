@@ -1,8 +1,9 @@
 /* global require */
 
-var shared = require('../lib/shared');
 var expect = require('chai').expect;
-var NumberPicker = require('../lib/number_picker');
+var BingoGame = require('../index')();
+var NumberPicker = BingoGame.NumberPicker;
+
 var numberPicker;
 
 describe('The Number Picker', function () {
