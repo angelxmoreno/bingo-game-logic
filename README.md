@@ -1,2 +1,3 @@
-# bingo-game-logic
-A Bingo Game brain
+# bingo-game-tests
+
+A Bingo Game test suite

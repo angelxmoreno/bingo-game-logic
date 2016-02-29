@@ -1,27 +1,32 @@
 {
-    "name": "bingo-game-logic",
-    "version": "0.0.1",
-    "description": "A Bingo Game brain",
+    "name": "bingo-game-tests",
+    "version": "0.1.0",
+    "description": "A Bingo Game test suite",
     "main": "index.js",
     "scripts": {
         "test": "mocha"
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/angelxmoreno/bingo-game-logic.git"
+        "url": "git+ssh://git@github.com/angelxmoreno/bingo-game-tests.git"
     },
     "keywords": [
         "Bingo",
-        "Game"
+        "Game",
+        "Bingo Game",
+        "tests"
     ],
     "author": "Angel S. Moreno <angelxmoreno@gmail.com> (https://angelxmoreno.github.io/)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/angelxmoreno/bingo-game-logic/issues"
+        "url": "https://github.com/angelxmoreno/bingo-game-tests/issues"
     },
-    "homepage": "https://github.com/angelxmoreno/bingo-game-logic#readme",
+    "homepage": "https://github.com/angelxmoreno/bingo-game-tests#readme",
     "devDependencies": {
         "chai": "^3.5.0",
         "mocha": "^2.4.5"
+    },
+    "dependencies": {
+        "uppercamelcase": "^1.1.0"
     }
 }
