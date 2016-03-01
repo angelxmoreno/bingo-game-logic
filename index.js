@@ -2,7 +2,7 @@
 
 var upperCamelCase = require('uppercamelcase');
 module.exports = function (lib_path) {
-    lib_path = lib_path || './lib/';
+    lib_path = lib_path || process.env.bingo_lib || './lib/';
     var exports = {};
     [
         'shared',
